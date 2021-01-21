@@ -1,0 +1,181 @@
+﻿/***
+            TilesMini(new in v1.1.1)
+            ***/
+.tilesMin {
+    margin-right: -10px;
+}
+
+    .tilesMin:before, .tilesMin:after {
+        display: table;
+        content: " ";
+    }
+
+    .tilesMin:after {
+        clear: both;
+    }
+
+    .tilesMin .tileMin {
+        display: block;
+        letter-spacing: 0.02em;
+        float: left;
+        height: 40px;
+        width: 40px !important;
+        cursor: pointer;
+        text-decoration: none;
+        color: #ffffff;
+        position: relative;
+        font-weight: 300;
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        line-height: 20px;
+        overflow: hidden;
+        border: 4px solid transparent;
+        margin: 0 10px 10px 0;
+    }
+
+        .tilesMin .tileMin:after, .tilesMin .tileMin:before {
+            content: "";
+            float: left;
+        }
+
+        .tilesMin .tileMin.double {
+            width: 280px !important;
+        }
+
+        .tilesMin .tileMin.double-down {
+            height: 280px !important;
+        }
+
+            .tilesMin .tileMin.double-down i {
+                margin-top: 95px;
+            }
+
+        .tilesMin .tileMin:hover {
+            border-color: #aaa !important;
+        }
+
+        .tilesMin .tileMin:active, .tilesMin .tileMin.selected {
+            border-color: #ccc !important;
+        }
+
+            .tilesMin .tileMin.selected .corner:after {
+                content: "";
+                display: inline-block;
+                border-left: 40px solid transparent;
+                border-bottom: 40px solid transparent;
+                border-right: 40px solid #79dd0e;
+                position: absolute;
+                top: -3px;
+                right: -3px;
+            }
+
+            .tilesMin .tileMin.selected .check:after {
+                content: "";
+                font-family: FontAwesome;
+                font-size: 10px;
+                content: "\f00c";
+                display: inline-block;
+                position: absolute;
+                 
+                right: 1px;
+            }
+
+
+        .tilesMin .tileMin.image .tileMin-body {
+            padding: 0 !important;
+        }
+
+
+
+        .tilesMin .tileMin .tileMin-body {
+            height: 100%;
+            vertical-align: top;
+            padding: 10px 10px;
+            overflow: hidden;
+            position: relative;
+            font-weight: 400;
+            font-size: 12px;
+            color: #000000;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+            .tilesMin .tileMin .tileMin-body p {
+                font-weight: 400;
+                font-size: 13px;
+                color: #000000;
+                color: #ffffff;
+                line-height: 20px;
+                overflow: hidden;
+            }
+
+                .tilesMin .tileMin .tileMin-body p:hover {
+                    color: rgba(0, 0, 0, 0.8);
+                }
+
+                .tilesMin .tileMin .tileMin-body p:active {
+                    color: rgba(0, 0, 0, 0.4);
+                }
+
+                .tilesMin .tileMin .tileMin-body p:hover {
+                    color: #ffffff;
+                }
+
+            .tilesMin .tileMin .tileMin-body img {
+                float: left;
+                margin-right: 10px;
+            }
+
+                .tilesMin .tileMin .tileMin-body img.pull-right {
+                    float: right !important;
+                    margin-left: 10px;
+                    margin-right: 0px;
+                }
+
+            .tilesMin .tileMin .tileMin-body > .content {
+                display: inline-block;
+            }
+
+            .tilesMin .tileMin .tileMin-body > i {
+                margin-top: 17px;
+                display: block;
+                font-size: 56px;
+                line-height: 56px;
+                text-align: center;
+            }
+
+        .tilesMin .tileMin .tileMin-object {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            min-height: 30px;
+            background-color: transparent;
+            *zoom: 1;
+        }
+
+            .tilesMin .tileMin .tileMin-object:before, .tilesMin .tileMin .tileMin-object:after {
+                display: table;
+                content: "";
+            }
+
+            .tilesMin .tileMin .tileMin-object:after {
+                clear: both;
+            }
+
+
+
+            .tilesMin .tileMin .tileMin-object > .number {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                margin-bottom: 0;
+                color: #ffffff;
+                text-align: center;
+                font-weight: 600;
+                font-size: 20px;
+                letter-spacing: 0.01em;
+                line-height: 18px;
+                margin-bottom: 8px;
+                margin-right: 10px;
+            }
